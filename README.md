@@ -4,6 +4,8 @@ MiniForms is a C# wrapper around WinForms' `NativeWindow`, providing a low-level
 
 The goal of MiniForms is to provide a simplified API for creating Win32 windows in C# while staying in sync with the upstream WinForms repository.
 
+And of course you can aot publish it.
+
 - **Target Framework**: .NET 9
 - **DLL Size**: ~50 KB
 
