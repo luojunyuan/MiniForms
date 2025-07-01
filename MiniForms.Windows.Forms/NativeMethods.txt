@@ -1,0 +1,40 @@
+// ScaleHelper.DpiAwarenessScope.cs
+DPI_HOSTING_BEHAVIOR
+SetThreadDpiAwarenessContext
+GetThreadDpiHostingBehavior
+SetThreadDpiHostingBehavior
+
+// Message.cs
+MSG
+
+// Win32
+AreDpiAwarenessContextsEqual
+RegisterWindowMessage
+CreateWindowEx
+GetThreadDpiAwarenessContext
+
+// NativeWindow.WindowClass.cs
+GetClassInfo
+GetModuleHandle
+RegisterClass
+
+// NativeWindow.cs ForceExitMessageLoop()
+IsWindow
+OpenThread
+GetExitCodeThread
+SendMessageTimeout
+NTSTATUS
+STATUS_PENDING
+CloseHandle
+
+// NativeWindow.cs
+GetProcAddress
+GetWindowDpiAwarenessContext
+DestroyWindow
+
+// Application.cs
+GetMessage
+TranslateMessage
+DispatchMessage
+PeekMessage
+WM_QUIT

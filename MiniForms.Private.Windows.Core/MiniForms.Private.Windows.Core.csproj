@@ -1,0 +1,34 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0-windows</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!--<Compile Include="..\winforms\src\System.Private.Windows.Core\src\Properties\AssemblyInfo.cs" Link="Properties\AssemblyInfo.Source.cs" />-->
+    <!--<Compile Include="..\winforms\src\System.Private.Windows.Core\src\PublicKeys.cs" Link="PublicKeys.cs" />-->
+    <Compile Include="..\winforms\src\System.Private.Windows.Core\src\Libraries.cs" Link="Libraries.cs" />
+    <Compile Include="..\winforms\src\System.Private.Windows.Core\src\System\Private\Windows\OsVersion.cs" Link="Utils\OsVersion.cs" />
+    <Compile Include="..\winforms\src\System.Private.Windows.Core\src\Windows\Win32\Graphics\Gdi\HGDIOBJ.cs" Link="Utils\HGDIOBJ.cs" />
+    <Compile Include="..\winforms\src\System.Private.Windows.Core\src\Windows\Win32\Foundation\IHandle.cs" Link="Utils\IHandle.cs" />
+    <Compile Include="..\winforms\src\System.Private.Windows.Core\src\Windows\Win32\Foundation\HWND.cs" Link="Utils\HWND.cs" />
+    <Compile Include="..\winforms\src\System.Private.Windows.Core\src\Windows\Win32\UI\WindowsAndMessaging\WNDPROC.cs" Link="Utils\WNDPROC.cs" />
+    <Compile Include="..\winforms\src\System.Private.Windows.Core\src\Windows\Win32\PInvokeCore.GetWindowThreadProcessId.cs" Link="Win32\PInvokeCore.GetWindowThreadProcessId.cs" />
+    <Compile Include="..\winforms\src\System.Private.Windows.Core\src\Windows\Win32\PInvokeCore.CallWindowProc.cs" Link="Win32\PInvokeCore.CallWindowProc.cs" />
+    <Compile Include="..\winforms\src\System.Private.Windows.Core\src\Windows\Win32\PInvokeCore.GetWindowLong.cs" Link="Win32\PInvokeCore.GetWindowLong.cs" />
+    <Compile Include="..\winforms\src\System.Private.Windows.Core\src\Windows\Win32\PInvokeCore.SetClassLong.cs" Link="Win32\PInvokeCore.SetClassLong.cs" />
+    <Compile Include="..\winforms\src\System.Private.Windows.Core\src\Windows\Win32\PInvokeCore.SetWindowLong.cs" Link="Win32\PInvokeCore.SetWindowLong.cs" />
+    <Compile Include="..\winforms\src\System.Private.Windows.Core\src\Windows\Win32\PInvokeCore.PostMessage.cs" Link="Win32\PInvokeCore.PostMessage.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Windows.CsWin32" Version="0.3.183">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+</Project>

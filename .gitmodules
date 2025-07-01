@@ -1,0 +1,3 @@
+[submodule "winforms"]
+	path = winforms
+	url = https://github.com/dotnet/winforms
